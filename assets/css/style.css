@@ -17881,15 +17881,20 @@ li.has-dropdown:hover .submenu {
   margin-bottom: 30px;
 }
 
-.contact-page-banner {
+/* .contact-page-banner {
   height: 450px !important;
-  background-image: url(../images/contact/02.webp);
+  background-image: url("../images/contact/02.jpg");
+  background-size: cover;
+  background-position: center 30%;
+  background-repeat: no-repeat;
 }
+
 @media only screen and (max-width: 575px) {
   .contact-page-banner {
     height: 250px !important;
+    background-position: center top; 
   }
-}
+} */
 
 .container-contact {
   max-width: 768px;
@@ -20334,4 +20339,34 @@ footer p, footer span {
   padding: 0 !important;
   margin: 0 !important;
   overflow: hidden !important;
+}
+
+
+ 
+
+.phoenix-banner-contacto .jarallax-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+@media (max-width: 768px) {
+  .phoenix-banner-contacto .jarallax-img {
+    background-image: url("assets/images/banner/ContactMov.jpg") !important;
+  }
+}
+
+
+
+/* Texto de UL y LI en blanco por defecto */
+.single-solution-style-one ul.disc,
+.single-solution-style-one ul.disc li {
+  color: #ffffff !important;
+}
+
+/* En hover, listas cambian a negro si el fondo se ilumina */
+.single-solution-style-one:hover ul.disc,
+.single-solution-style-one:hover ul.disc li {
+  color: #000000 !important;
 }
