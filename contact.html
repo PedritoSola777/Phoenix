@@ -18,7 +18,17 @@
     <link rel="stylesheet preload" href="assets/css/plugins/metismenu.css" as="style" media="print"
         onload="this.media='all'">
     <link rel="stylesheet preload" href="assets/css/style.css" as="style">
-</head>
+
+  <style>
+    /* En mobile (puedes ajustar el max-width que uses en tu diseño) */
+@media (max-width: 768px) {
+  .phoenix-banner .jarallax-img {
+    content: url("assets/images/banner/ContactMov.jpg"); 
+  }
+}
+  </style>
+
+  </head>
 
 <body>
 <header class="header-style-one style-two">
@@ -97,6 +107,14 @@
     <div class="contact-page-banner jarallax bg_iamge">
 
     </div>
+
+
+   <div class="phoenix-banner phoenix-banner-contacto jarallax" data-jarallax data-speed="0.3">
+  <img class="jarallax-img" 
+       src="assets/images/banner/BannerContacto.jpg" 
+       alt="Phoenix Consultores">
+</div>
+
     <!-- contact banner areas end -->
 
     <!-- contact area form wrapper start -->
