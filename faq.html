@@ -18,7 +18,46 @@
     <link rel="stylesheet preload" href="assets/css/plugins/metismenu.css" as="style" media="print"
         onload="this.media='all'">
     <link rel="stylesheet preload" href="assets/css/style.css" as="style">
-</head>
+
+    <style>
+      
+  /* Color para los labels cerrados */
+  .accordion-button {
+    background-color: #e36a1c !important;
+    color: #fff !important;
+  }
+
+  /* Al abrir, Bootstrap le cambia estilos; los ajustamos */
+  .accordion-button:not(.collapsed) {
+    background-color: #c85e19 !important;
+    color: #fff !important;
+    box-shadow: none !important;
+  }
+
+  /* Evitar borde azul feo en mobile */
+  .accordion-button:focus {
+    box-shadow: none !important;
+  }
+
+  /* Opcional: redondear */
+  .accordion-item {
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+
+  /* En mobile (puedes ajustar el max-width que uses en tu diseño) */
+        @media (max-width: 768px) {
+        .phoenix-banner .jarallax-img {
+            content: url("assets/images/banner/BannerMov.jpg"); 
+        }
+        }
+
+
+    </style>
+
+
+  </head>
 
 <body>
     <header class="header-style-one style-two">
@@ -121,19 +160,20 @@
 
             <!-- Pregunta 1 -->
             <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  1. ¿Cuándo puedo retirar mis ahorros de la afore?
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  Puedes disponer de tus ahorros al alcanzar la edad de jubilación establecida por la ley, si obtienes una pensión por invalidez o tras un periodo prolongado sin empleo. También existen retiros parciales por desempleo, matrimonio, remodelación de vivienda o aportaciones voluntarias, aunque estos pueden reducir tu ahorro final.
-                </div>
-              </div>
-            </div>
+  <h2 class="accordion-header">
+    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+      data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+      ¿Qué es la Consar y cuáles son sus funciones?
+    </button>
+  </h2>
+  <div id="collapseOne" class="accordion-collapse collapse show"
+    data-bs-parent="#accordionExample">
+    <div class="accordion-body">
+      La Consar es la Comisión Nacional del Sistema de Ahorro para el Retiro, una entidad encargada de regular y supervisar a las Afores en México. Su función principal es asegurar que las administradoras gestionen tu ahorro de manera transparente, eficiente y segura. Además, establece reglas, vigila el comportamiento del sistema, protege los intereses de los trabajadores y promueve la educación financiera en temas relacionados con el retiro.
+    </div>
+  </div>
+</div>
+
 
             <!-- Pregunta 2 -->
             <div class="accordion-item">
@@ -322,7 +362,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 offset-lg-1 mt_md--30 mt_sm--30">
-                   <form action="#" class="consulting-form" netlify  name="FormPreguntas">
+                   <form  class="consulting-form" netlify  name="FormPreguntas">
   <p>Cuéntanos sobre tus dudas</p>
 
   <div class="input-half-wrapper">
@@ -369,7 +409,7 @@
             <p class="wow fadeInUp" data-wow-delay=".3s">
               Programa una cita sin compromiso para conversar sobre tus necesidades y cómo Phoenix Consultores puede ayudarte a optimizar tus trámites y decisiones financieras.
             </p>
-            <a href="#" class="rts-btn btn-primary wow fadeInUp" data-wow-delay=".5s">
+            <a href="contact.html" class="rts-btn btn-primary wow fadeInUp" data-wow-delay=".5s">
               Agendar ahora
               <img class="injectable" src="assets/images/service/icons/13.svg" alt="flecha">
             </a>

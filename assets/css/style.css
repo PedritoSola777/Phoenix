@@ -19131,7 +19131,7 @@ li.has-dropdown:hover .submenu {
   padding-top: 50px;
   height: 100%;
   display: block;
-  background-color: white;
+  background-color: #dd6a18b0;
   backdrop-filter: blur(7px);
   z-index: 1900;
   transition: all 600ms ease;
@@ -20345,7 +20345,7 @@ footer p, footer span {
  
 
 .phoenix-banner-contacto .jarallax-img {
-  width: 100%;
+  width: 150px;
   height: 100%;
   object-fit: cover;
 }
@@ -20370,3 +20370,27 @@ footer p, footer span {
 .single-solution-style-one:hover ul.disc li {
   color: #000000 !important;
 }
+
+
+/* Centrar completamente el contenido del trámite */
+.single-case-studies-three.centered {
+    text-align: center;
+    padding-right: 20px; /* Ajusta si deseas 10px, 30px, etc. */
+}
+
+/* Ajuste opcional para mantener buena visual en mobile */
+@media (max-width: 768px) {
+    .single-case-studies-three.centered {
+        padding-right: 10px;
+    }
+}
+
+
+/* En mobile (puedes ajustar el max-width que uses en tu diseño) */
+        @media (max-width: 768px) {
+        .phoenix-banner .jarallax-img {
+            content: url("assets/images/banner/BannerMov.jpg"); 
+        }
+        }
+
+
