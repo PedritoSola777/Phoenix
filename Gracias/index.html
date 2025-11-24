@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confirmación de Envío</title>
+  <link rel="shortcut icon" href="../assets/images/logo/FavPC.png" type="image/x-icon">
+  <style>
+    :root {
+      /* Gradiente principal (iconos y botones): naranja → metal */
+      --gradient: linear-gradient(135deg, #FF6A00, #6A6A6A);
+
+      /* Naranja pastel para el fondo */
+      --bg-soft: linear-gradient(180deg, #FFE1CC 0%, #FFFFFF 80%);
+
+      --primary: #FF6A00;
+      --text-dark: #0A0A0A;
+      --text-light: #555;
+      --radius: 25px;
+    }
+
+    body {
+      font-family: "Poppins", "Roboto", sans-serif;
+
+      /* Nuevo fondo suave */
+      background: var(--bg-soft);
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    /* Logo */
+    .logo {
+      position: absolute;
+      top: 25px;
+      left: 25px;
+      width: 50px;
+      height: auto;
+      opacity: 0.85;
+      transition: opacity 0.3s ease;
+    }
+
+    .logo:hover {
+      opacity: 1;
+    }
+
+    /* Icono de sobre */
+    .icon {
+      width: 90px;
+      height: 90px;
+
+      /* Gradiente naranja-metal */
+      background: var(--gradient);
+
+      -webkit-mask: url('https://cdn-icons-png.flaticon.com/512/561/561127.png') no-repeat center;
+      mask: url('https://cdn-icons-png.flaticon.com/512/561/561127.png') no-repeat center;
+      -webkit-mask-size: 60%;
+      mask-size: 60%;
+
+      margin-bottom: 30px;
+      border-radius: 50%;
+      animation: popIn 0.8s ease;
+      box-shadow: 0 6px 18px rgba(255, 106, 0, 0.35);
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      color: var(--text-dark);
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: var(--text-light);
+      font-size: 1rem;
+      margin-bottom: 35px;
+    }
+
+    /* Botón principal */
+    a.button {
+      display: inline-block;
+      background: var(--gradient);
+      color: #fff;
+      padding: 12px 32px;
+      border-radius: var(--radius);
+      text-decoration: none;
+      font-weight: 500;
+      transition: transform 0.2s ease, box-shadow 0.3s ease;
+      box-shadow: 0 6px 15px rgba(255, 106, 0, 0.4);
+    }
+
+    a.button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(255, 106, 0, 0.5);
+    }
+
+    /* Animaciones */
+    @keyframes popIn {
+      0% { transform: scale(0.7); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    /* Footer */
+    footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 0.8rem;
+      color: #aaa;
+    }
+
+    @media (max-width: 500px) {
+      h1 { font-size: 1.5rem; }
+      p { font-size: 0.9rem; }
+      .icon { width: 75px; height: 75px; }
+    }
+</style>
+
+
+</head>
+<body>
+  <img src="../assets/images/logo/LogoP.png" alt="Logo" class="logo" style="width: 150px;">
+
+  <div class="icon"></div>
+
+  <h1>¡Gracias por tu mensaje!</h1>
+  <p>Tu mensaje ha sido enviado correctamente.  
+     Pronto nos pondremos en contacto contigo.</p>
+
+  <a href="../index.html" class="button">Volver al inicio</a>
+
+  <footer>© Todos los derechos reservados</footer>
+</body>
+</html>
