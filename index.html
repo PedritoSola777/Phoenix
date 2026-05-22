@@ -38,6 +38,34 @@
             content: url("assets/images/banner/Mob.avif"); 
         }
         }
+
+        .faq-image-container{
+    width: 100%;
+    height: 100%;
+    max-height: 720px;
+    overflow: hidden;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.faq-image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+@media (max-width: 992px){
+
+    .faq-image-container{
+        max-height: 400px;
+    }
+
+}
+
     </style>
 
     
@@ -362,9 +390,12 @@ Con casi 10 años en el mercado, hemos ayudado a más de 2,800 clientes de toda 
 
                 </div>
                 <div class="col-lg-7">
-                    <div class="thumbnail-main-wrapper-choose-us">
-                        <img src="https://img.magnific.com/vector-gratis/fondo-signo-interrogacion-naranja-espacio-texto_1017-27394.jpg?ga=GA1.1.1536601265.1777575210&semt=ais_hybrid&w=740&q=80" alt="service" style="border-radius: 10px;">
-                    </div>
+                    <div class="faq-image-container">
+    <img 
+        src="https://img.magnific.com/vector-gratis/fondo-signo-interrogacion-naranja-espacio-texto_1017-27394.jpg?ga=GA1.1.1536601265.1777575210&semt=ais_hybrid&w=740&q=80" 
+        alt="Créditos de vivienda"
+    >
+</div>
                 </div>
             </div>
         </div>
